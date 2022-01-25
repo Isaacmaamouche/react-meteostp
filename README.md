@@ -1,3 +1,8 @@
+# This is un ongoing project
+
+Code has not been cleaned.
+I may add new features in the future, such as saving locations to get their weather at app launch and display them in a grid below the main result. Also a refresh button but i don't think that's usefull as open weather map update its data every 10 minutes.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
