@@ -9,7 +9,7 @@ export default function DefaultCity(){
     return (
         <>
         {result.results&&(
-        <Card bg='primary' className='my-5 text-white mx-auto' style={{width:"max(400px, 50%)"}}>
+        <Card bg='primary' className='my-5 text-white mx-auto shadow' style={{width:"max(400px, 50%)"}}>
         <Card.Body>
 
             <Card.Text className='text-center fs-1'>
@@ -18,7 +18,7 @@ export default function DefaultCity(){
             
             <Container className='mx-auto'>
                 <Row>
-                    <Col><Card.Title className='mb-1'>{result.results.name} | {result.results.main.temp}° C | {result.results.weather[0].description}</Card.Title></Col>
+                    <Col><Card.Title className='my-2 p-2 shadow-sm'>{result.results.name} | {result.results.main.temp}° C | {result.results.weather[0].description}</Card.Title></Col>
                 </Row>
                 <Row>
                     <Col>Taux d'humidité&nbsp;: {result.results.main.humidity}%</Col>

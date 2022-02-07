@@ -1,4 +1,4 @@
-# This is un ongoing project
+# This is an ongoing project
 
 Code has not been cleaned.
 I may add new features in the future, such as saving locations to get their weather at app launch and display them in a grid below the main result. Also a refresh button but i don't think that's usefull as open weather map update its data every 10 minutes.

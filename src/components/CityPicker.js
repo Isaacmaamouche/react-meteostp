@@ -22,7 +22,7 @@ export default function CityPicker(){
                 const response = await fetch(`https://warm-peak-43536.herokuapp.com/api/search?q=${cityInput.current.value}`);
                 const data = await response.json();
                 setResult(data)
-                
+
                 //Dummy result for testing
                 //setResult({"success":true,"results":{"coord":{"lon":3.8772,"lat":43.6109},"weather":[{"id":800,"main":"Clear","description":"ciel dégagé","icon":"01d"}],"base":"stations","main":{"temp":10.02,"feels_like":8.77,"temp_min":9.71,"temp_max":11.81,"pressure":1028,"humidity":65},"visibility":10000,"wind":{"speed":0.45,"deg":170,"gust":1.79},"clouds":{"all":0},"dt":1643032625,"sys":{"type":2,"id":2038454,"country":"FR","sunrise":1643008130,"sunset":1643042636},"timezone":3600,"id":2992166,"name":"Montpellier","cod":200}})    
             }
@@ -60,11 +60,11 @@ export default function CityPicker(){
         <>
         <Form onSubmit={handleSubmit} className="my-5" >
         <Form.Group className='d-flex flex-row mb-1 mx-auto' controlId="cityPickerTextCity">
-              <Form.Control className='me-3' type="text" pattern="[ a-zA-Z0-9]+" ref={cityInput} onFocus={handleFocus} onBlur={handleBlur} onChange={handleChange} autoComplete="off" placeholder="Ville ou code postal"/>
+              <Form.Control className='shadow me-3' type="text" pattern="[ a-zA-Z0-9]+" ref={cityInput} onFocus={handleFocus} onBlur={handleBlur} onChange={handleChange} autoComplete="off" placeholder="Ville ou code postal"/>
               {inputValid?(
-                <Button type="submit">Valider</Button>
+                <Button className="shadow" type="submit">Valider</Button>
                 ):(
-                <Button className="rounded" type="submit" disabled>Valider</Button>
+                <Button className="shadow" type="submit" disabled>Valider</Button>
                 )}
         </Form.Group>
         {matchListDisplay&&(
